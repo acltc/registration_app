@@ -1,0 +1,98 @@
+<h1>Anyone Can Learn To Code Student Registration</h1>
+<h2>Please complete the form below:</h2>
+
+<div class="form">
+  <%= form_tag '/students' do %>
+    <div class="form-group">
+      <%= label_tag :first_name %>
+      <%= text_field_tag :first_name, @student.first_name, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= label_tag :last_name %>
+      <%= text_field_tag :last_name, @student.last_name, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= label_tag :email %>
+      <%= text_field_tag :email, @student.email, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= label_tag :phone_number %>
+      <%= text_field_tag :phone_number, @student.phone_number, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= label_tag :emergency_contact_name %>
+      <%= text_field_tag :emergency_contact_name, @student.emergency_contact_name, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= label_tag :emergency_contact_phone %>
+      <%= text_field_tag :emergency_contact_phone, @student.emergency_contact_phone, class: "form-control" %>
+    </div>
+
+    <div>
+      <p>The terms and conditions of registration can be found <a data-toggle="modal" data-target="#myModal" href="#">here</a>.</p>
+    </div>
+
+    <div class="checkbox">
+      <label>
+        <%= check_box_tag :terms_and_conditions %> I have read and accept all of the terms and conditions.
+      </label>      
+    </div>
+
+    <div class="checkbox">
+      <label>
+        <%= check_box_tag :term_1 %> I have carefully read and received an exact copy of this enrollment agreement.
+      </label>      
+    </div>
+
+    <div class="checkbox">
+      <label>
+        <%= check_box_tag :term_2 %> I understand that the school may terminate my enrollment if I fail to comply with attendance, academic, and financial requirements or if I fail to abide by established standards of conduct. I understand that my financial obligation to the school must be paid in full before a certificate or credential may be awarded.
+      </label>      
+    </div>
+
+    <div class="checkbox">
+      <label>
+        <%= check_box_tag :term_3 %> I hereby acknowledge that the school has made available to me all required disclosure information listed under the Consumer Information section of this Enrollment Agreement.
+      </label>      
+    </div>
+
+    <div class="checkbox">
+      <label>
+        <%= check_box_tag :term_4 %> I understand that the school does not guarantee transferability of credit and that in most cases, credits or coursework are not likely to transfer to another institution. In cases where transferability is guaranteed, Anyone Can Learn To Code must provide me copies of transfer agreements that name the exact institution(s) and include agreement details and limitations.
+      </label>      
+    </div>
+
+    <div class="checkbox">
+      <label>
+        <%= check_box_tag :term_5 %> I understand that the school does not guarantee job placement to graduates upon program completion.
+      </label>      
+    </div>
+
+    <div class="form-group">
+      <%= submit_tag "Register" %>
+    </div>
+  <% end %>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
