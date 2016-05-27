@@ -1,6 +1,6 @@
 class EnrollmentMailer < ApplicationMailer
   def notify_admissions_team(student)
     @student = student
-    mail(to: "admissions@anyonecanlearntocode.com", subject: "New Enrollment: #{@student.full_name}")
+    mail(from: "sandboxd035c758dbb54757b1b13d910d57a6b3.mailgun.org", to: "admissions@anyonecanlearntocode.com", subject: "New Enrollment: #{@student.full_name}")
   end
 end
