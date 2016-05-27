@@ -5,4 +5,8 @@ class Student < ActiveRecord::Base
   validates :phone_number, presence: true
   validates :emergency_contact_name, presence: true
   validates :emergency_contact_phone, presence: true
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
 end

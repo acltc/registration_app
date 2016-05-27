@@ -1,5 +1,4 @@
 class StudentsController < ApplicationController
-  # TODO: Add legalese to modal
   # TODO: Add branding
   # TODO: Send a notification to admin 
   # TODO: Admin dashboard
