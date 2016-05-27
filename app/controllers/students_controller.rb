@@ -1,7 +1,4 @@
 class StudentsController < ApplicationController
-  # TODO: Add branding
-  # TODO: Send a notification to admin 
-  # TODO: Admin dashboard
 
   def new
     @student = Student.new
