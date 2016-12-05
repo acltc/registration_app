@@ -85,7 +85,7 @@ Rails.application.configure do
     :address => "smtp.mailgun.org",
     :port => 587,
     :domain => "https://git.heroku.com/polar-taiga-25738.git",
-    :user_name => ENV["MAILGUN_USER_NAME"],
-    :password => ENV["MAILGUN_PASSWORD"]
+    :user_name => ENV["MAILGUN_USER_NAME_UPDATE"],
+    :password => ENV["MAILGUN_PASSWORD_UPDATE"]
   }
 end
