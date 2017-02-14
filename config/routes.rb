@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   root 'students#new'
-  # post '/students' => 'students#create'
-
-  get '/students' => 'students#show'
+  post '/students' => 'students#create'  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
