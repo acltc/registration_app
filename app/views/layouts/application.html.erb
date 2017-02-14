@@ -11,9 +11,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container-fluid">
-    <%= image_tag "http://anyonecanlearntocode.com/assets/acltc_logo-d967484a3398f2fe8102e1d7080a61bb362aefbfcc612ee9592a10a0516016e2.png" %>
-    
+    <div class="row" id="enrollment-image-row">
+      <div class="col-xs-12" id="actualize-logo">
+        <img src="<%= asset_path 'ActualizeFinalwhiteBgLogo.png' %>">
+      </div>
+    </div>
     <% flash.each do |name, message| %>
       <div class="alert alert-<%= name %> alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -22,7 +24,6 @@
     <% end %>
     
     <%= yield %>
-  </div>
 
 </body>
 </html>
