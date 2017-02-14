@@ -4,6 +4,9 @@ class StudentsController < ApplicationController
     @student = Student.new
   end
 
+  def show
+  end
+  
   def create
     @student = Student.new({
         first_name: params[:first_name],

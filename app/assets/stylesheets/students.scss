@@ -46,8 +46,15 @@ body {
   font-size: 18px;
 }
 
+#thank-you-container {
+  background-color: #FBBB00 !important;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 #success {
-  width: 50%;
+  // width: 50%;
 }
 
 #myModal {
@@ -75,6 +82,10 @@ body {
 #register-button:hover {
   background-color: #007afd !important;
   color: #fff;
+}
+
+#creditcard-button {
+  margin-top: 30px;
 }
 
 // #register-button {
