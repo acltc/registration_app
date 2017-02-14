@@ -7,6 +7,9 @@ body {
   background-color: #FBBB00 !important;
 }
 
+#enrollment-container {
+  color: #000;
+}
 #enrollment-image-row {
   background-color: #fff;
 }
@@ -21,11 +24,33 @@ body {
   padding-bottom: 30px;
 }
 
+#nyc-circle-image img {
+  margin-top: 20px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+#enrollment-header-row {
+  padding-top: 30px;
+}
+
 .form {
-  width: 50%;
+  width: 100%;
+}
+
+.form label {
+  font-size: 18px;
+}
+
+#terms-container {
+  font-size: 18px;
 }
 
 #success {
   width: 50%;
+}
+
+#myModal {
+  width: 90% !important;
 }
 
