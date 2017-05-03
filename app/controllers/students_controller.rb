@@ -29,6 +29,6 @@ class StudentsController < ApplicationController
   private
 
   def accepted_terms_and_conditions?
-    params[:term_1] && params[:term_2] && params[:term_3] && params[:term_4] && params[:term_5] 
+    params[:term_1] && params[:term_2] && params[:term_3] && params[:term_4]
   end
 end
