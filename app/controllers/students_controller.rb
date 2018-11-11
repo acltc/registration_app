@@ -15,7 +15,7 @@ class StudentsController < ApplicationController
         })
     if accepted_terms_and_conditions?
       if @student.save
-        EnrollmentMailer.notify_admissions_team(@student).deliver_now
+        # EnrollmentMailer.notify_admissions_team(@student).deliver_now
       else
         flash.now[:warning] = "Please complete all of the contact information below."
         render :new
